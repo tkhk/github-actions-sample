@@ -19,7 +19,7 @@ jobs:
     - name: Create a release pull request
       uses: bakunyo/git-pr-release-action@master
       env:
-        GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GIT_PR_RELEASE_BRANCH_PRODUCTION: main
         GIT_PR_RELEASE_BRANCH_STAGING: develop
         GIT_PR_RELEASE_LABELS: release
